@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos y Audios</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #e1f3e5; /* Fondo verde claro */
+        }
+
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .media-item {
+            width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .media-item video, .media-item audio {
+            width: 100%;
+        }
+
+        .media-item video {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Videos y Audios</h2>
+
+    <div class="media-container">
+        <div class="media-item">
+            <video controls>
+                <source src="P.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="media-item">
+            <audio controls>
+                <source src="ROBLOX.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+
+    <div class="media-container">
+        <div class="media-item">
+            <video controls>
+                <source src="Q.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="media-item">
+            <audio controls>
+                <source src="COLDPLAY.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>
